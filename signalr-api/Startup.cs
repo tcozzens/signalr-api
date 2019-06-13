@@ -25,7 +25,7 @@ namespace SignalR_Hub
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .AllowCredentials()
-                .WithOrigins("http://localhost:4200");
+                .WithOrigins("https://tcozzens.github.io/signalr-app/");
             }));
 
             services.AddSignalR();
