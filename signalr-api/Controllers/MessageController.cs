@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using SignalRHub;
 using System;
@@ -7,6 +8,7 @@ namespace SignalR_Hub.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[EnableCors("CorsPolicy")]
     public class MessageController : ControllerBase
     {
         private IHubContext<NotifyHub, ITypedHubClient> _hubContext;
