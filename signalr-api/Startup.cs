@@ -22,13 +22,18 @@ namespace SignalR_Hub
             services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
             {
                 builder
-                    .WithOrigins("http://localhost:4200")
-                    //For Prod
-                    //.WithOrigins("http://tcozzens.com")
-                    .AllowAnyMethod()
-                    .AllowAnyHeader()
-                    .AllowCredentials();
+                .WithOrigins("http://localhost:4200")
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials();
             }));
+
+            // For Prod
+            //.WithOrigins("http://tcozzens.com")
+            ////.WithHeaders("Access-Control-Allow-Origin")
+            //.AllowAnyMethod()
+            //.AllowAnyHeader()
+            //.AllowCredentials();
 
             services.AddSignalR();
 
