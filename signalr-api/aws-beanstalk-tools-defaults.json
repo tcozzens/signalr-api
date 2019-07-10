@@ -5,7 +5,7 @@
     "region"  : "us-east-1",
     "application" : "signalrapi",
     "environment" : "signalrapi-prod",
-    "cname"       : "signalrapi-prod",
+    "cname"       : "signalrapi",
     "solution-stack" : "64bit Windows Server Core 2016 v2.0.4 running IIS 10.0",
     "environment-type" : "SingleInstance",
     "instance-profile" : "aws-elasticbeanstalk-ec2-role",

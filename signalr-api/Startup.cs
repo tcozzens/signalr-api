@@ -26,14 +26,14 @@ namespace SignalR_Hub
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .AllowCredentials();
+                //For Prod
+                //.WithOrigins("http://tcozzens.com")
+                //.WithHeaders("Access-Control-Allow-Origin")
+                //.AllowAnyMethod()
+                //.AllowAnyHeader()
+                //.AllowCredentials();
             }));
 
-            // For Prod
-            //.WithOrigins("http://tcozzens.com")
-            ////.WithHeaders("Access-Control-Allow-Origin")
-            //.AllowAnyMethod()
-            //.AllowAnyHeader()
-            //.AllowCredentials();
 
             services.AddSignalR();
 
